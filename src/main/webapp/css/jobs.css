@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+
+}
+
+.job-box {
+    margin: 0.1px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 60%;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-section {
+    margin-bottom: 20px;
+}
+
+.job-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.job-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.job-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.job-item:last-child {
+    border-bottom: none;
+}
+.profile-description {
+    background: #f2f2f2;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skills-btn {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    text-decoration:none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.skills-btn img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.skills-btn:hover {
+    background: #333;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .skills-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+.job-card {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    background-color: #fff;
+    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.logo {
+    width: 40px;
+    height:40px;
+    margin-right: 10px;
+}
+
+.job-details {
+    flex: 1;
+}
+
+.job-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.company {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.location {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.action-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.status {
+    font-size: 12px;
+    color: #555;
+    margin-top: 5px;
+}
+.job-box h2{
+    font-size: 18px;
+}
+.job-box p{
+    color: #777;
+}
+.mutual{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style-type: none;
+}
+.mutual img{
+    margin-top:10px;
+    width: 22px;
+    border-radius: 50%;
+    height: auto;
+}

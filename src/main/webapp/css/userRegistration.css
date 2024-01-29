@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Ensure that the background image does not extend beyond the viewport */
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.left-panel {
+    flex: 1;
+    padding: 2rem;
+    background-color: rgba(211, 211, 211, 0.5);
+    text-align: center;
+}
+
+.left-panel img {
+    max-width: 80px;
+    margin-bottom: 1rem;
+}
+
+.right-panel {
+    flex: 1;
+    padding: 2rem;
+    background-color: rgba(211, 211, 211, 0.5); /* Slight transparency */
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Rest of your CSS rules */
+
+
+.right-panel h2 {
+    margin-bottom: 1rem;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"] {
+    margin-bottom: 0.5rem;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 4px;
+    border: 1px solid lightgrey;
+}
+
+button {
+    padding: 0.7rem;
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+}
+h2 {
+    text-align: center;
+    color: #333; /* Choose an appropriate text color */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.line1 {
+    width: 180px;
+    height: 0px;
+    border: 1px solid black;
+}
+
+.or {
+    font-weight: bold;
+    margin: 0.5px auto;
+}
+
+button.google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 14px;
+    padding: 0.6rem;
+    border: 1px solid lightgrey;
+}
+
+button.google img {
+    margin-right: 10px;
+    max-width: 24px;
+}
+
+button.google:hover {
+    background-color: lightgrey;
+}
+
+.forget {
+    color: blue;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #005082;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+.member{
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-panel,
+    .right-panel {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .right-panel {
+        padding: 1rem;
+    }
+}

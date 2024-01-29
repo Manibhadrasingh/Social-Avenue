@@ -1,0 +1,314 @@
+
+/* Profile page */
+
+.profile-main {
+    display: flex; /* Display profile-container and profile-sidebar side by side */
+    gap: 20px; /* Gap between profile-container and profile-sidebar */
+}
+
+.profile-container {
+    /* Existing styles for profile container */
+    /* You might need to adjust the width to make space for the sidebar */
+    flex-basis: 73%; /* You can adjust this value as needed */
+}
+
+.profile-sidebar {
+    /* Existing styles for profile sidebar */
+    flex-basis: 40%; /* You can adjust this value as needed */
+    margin-top:15px ;
+    position: sticky;
+    top: 73px;
+    /* Add other styles to make the sidebar stick to the top while scrolling */
+}
+
+
+.profile-container{
+    background: #fff;
+}
+.profile-container-inner{
+    padding:0 4% 10px;
+}
+
+.profile-pic{
+    width: 150px;
+    border-radius: 50%;
+    margin-top: -75px;
+    padding: 5px;
+    background: #fff;
+}
+.profile-container h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+}
+.profile-container b{
+    font-weight: 500;
+
+}
+.profile-container p{
+    margin-top: 5px;
+}
+.profile-container p a{
+    color: #045be6;
+    font-weight: 500;
+}
+.mutual-connection{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.mutual-connection img{
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.profile-btn{
+    margin: 20px 0;
+
+}
+.profile-btn a{
+    display: inline-flex;
+    align-items: center;
+    background: #e4e6eb;
+    padding: 6px 15px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.profile-btn a img{
+    width: 18px;
+    margin-right: 5px;
+}
+.profile-btn .primary-btn{
+    background: #045be6;
+    color: #fff;
+}
+.primary-btn img{
+    filter: brightness(0) invert(1);
+}
+.profile-description{
+    background: #fff;
+    padding: 20px 4% 30px;
+    margin: 12px 0;
+}
+.profile-description h2{
+    color: #333;
+    margin: 10px 0 20px;
+    font-weight: 600;
+}
+.see-more-link{
+    display: block;
+    text-align: right;
+    font-size: 15px;
+}
+.profile-desc-row{
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+.profile-desc-row img{
+    width: 50px;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+.profile-desc-row div{
+    width: 100%;
+}
+.profile-desc-row h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+.profile-desc-row b{
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+}
+.profile-desc-row p{
+    margin-top: 15px;
+}
+.profile-desc-row hr{
+    border:0;
+    border-bottom: 1px solid #999;
+    margin-top: 10px;
+}
+.experience-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    font-weight: 500;
+}
+.experience-link img{
+    width: 20px;
+    margin-left: 9px;
+}
+.skills-btn{
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 6px 18px;
+    border: 1px solid #777;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.language-btn{
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 6px 18px;
+    background: #e4e6eb;
+    font-size: 12px;
+    font-weight: 500;
+}
+.profile-sidebar .sidebar-ad{
+    margin: 0;
+}
+
+.sidebar-ad{
+    background: #fff;
+    padding: 15px 25px;
+    text-align: center;
+    margin: 12px 0;
+    font-size: 12px;
+}
+.sidebar-ad img{
+    width: 60px;
+    border-radius:50% ;
+    margin: 4px;
+}
+.sidebar-ad small{
+    float: right;
+    font-weight: 500;
+
+}
+.sidebar-ad p{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.sidebar-ad b{
+    display: block;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+
+
+/*Update Profile Code is here*/
+
+button {
+    padding: 10px 20px;
+    background-color: #0077B5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup-content {
+    background-color: #fff;
+    width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0077B5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*updated code*/
+
+.experience-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.experience-heading h2 {
+    margin: 0; /* Remove default margin */
+}
+#edit-experience-button {
+    text-decoration: none;
+    color: #007bff; /* Change the color to your preferred color */
+}
+#edit-experience-button img {
+    width: 18px;
+    vertical-align: middle; /* Vertically align the image */
+}
+
+.edit-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+.edit-button img {
+    width: 18px;
+}
+
+/* Move the edit button to the right */
+.experience-heading .edit-button {
+    margin-left: auto;
+}
+.edit_button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+.edit_button img {
+    width: 18px;
+}
+
+/* Move the edit button to the right */
+.experience-heading .edit_button {
+    margin-left: auto;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .popup-content {
+        max-width: 90%;
+    }
+}
